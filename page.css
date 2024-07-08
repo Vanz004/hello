@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative; /* Added for positioning */
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.image {
+  flex: 1;
+  position: relative; /* Added for positioning */
+  overflow: hidden; /* Hide overflowing parts */
+}
+
+.image img {
+  max-width: calc(100% + 50px); /* Make image wider */
+  height: auto;
+  position: relative; /* Added for positioning */
+  left: -px; /* Move image left */
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0)); /* Mask for right edge fade */
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
